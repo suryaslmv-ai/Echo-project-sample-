@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECHO EARTH – See the Future Before You Create It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060b17;--pn:#0d1627;--pn2:#122038;--ln:#1e3250;--tx:#e8f1fb;--mu:#8fa7c6;--cy:#2dd4ee;--tl:#14b8a6;--em:#34d399;--wa:#fbbf24;--bd:#f87171;--hf:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--bf:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+:root[data-theme=light]{--bg:#f2f8fb;--pn:#fff;--pn2:#e8f2f7;--ln:#cbdbe7;--tx:#0a1a2c;--mu:#475f78;--cy:#0e7490;--tl:#0f766e;--em:#047857;--wa:#b45309;--bd:#b91c1c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 var(--bf)}
+h1,h2,h3{font-family:var(--hf);margin:0;line-height:1.1}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.nv{max-width:1180px;margin:auto;padding:10px 16px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.logo{font:700 20px var(--hf);letter-spacing:.03em;margin-right:auto;color:var(--tx);text-decoration:none}
+.logo b{color:var(--cy)}
+nav a.t{color:var(--mu);text-decoration:none;padding:6px 10px;border-radius:8px;font-weight:500}
+nav a.t.on{color:var(--tx);background:var(--pn2)}
+button{font:inherit;background:var(--pn2);color:var(--tx);border:1px solid var(--ln);border-radius:9px;padding:8px 13px;cursor:pointer}
+button.p,a.btn.p{background:linear-gradient(135deg,var(--cy),var(--em));color:#03121c;border:0;font-weight:600}
+a.btn{display:inline-block;text-decoration:none;color:var(--tx);border:1px solid var(--ln);border-radius:9px;padding:10px 16px;font-weight:600}
+button:hover,a.btn:hover{border-color:var(--cy)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+.pg{display:none;max-width:1180px;margin:auto;padding:20px 16px 48px}.pg.on{display:block}
+.g{display:grid;gap:16px}
+@media(min-width:900px){.g2{grid-template-columns:300px 1fr 300px}.g3{grid-template-columns:repeat(4,1fr)}.g4{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr 1.15fr;align-items:center}}
+.c{background:var(--pn);border:1px solid var(--ln);border-radius:14px;padding:16px}
+.hero{display:grid;gap:24px;padding:28px 0}
+.hero h1{font-size:clamp(36px,6vw,62px);letter-spacing:-.02em}
+.lead{color:var(--mu);font-size:17px;max-width:520px;margin:14px 0 20px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+svg{display:block;max-width:100%}
+h2{font-size:24px;margin:28px 0 12px}h3{font-size:17px;margin-bottom:8px}
+.sm{font-size:12.5px;color:var(--mu)}
+label{display:block;margin:11px 0 2px;font-size:13px;color:var(--mu)}
+.row{display:flex;gap:8px;align-items:center}
+input[type=range]{flex:1;accent-color:var(--cy)}
+input[type=number],input[type=text]{background:var(--bg);color:var(--tx);border:1px solid var(--ln);border-radius:7px;padding:5px 7px;font:inherit}
+input[type=number]{width:80px}
+.chk{display:flex;gap:8px;align-items:center;margin:6px 0;color:var(--tx)}
+.m{margin:0 0 13px}.mh{display:flex;justify-content:space-between;gap:8px;font-size:14px}
+.bar{height:10px;background:var(--bg);border:1px solid var(--ln);border-radius:6px;position:relative;margin-top:4px;overflow:hidden}
+.bar i{position:absolute;left:0;height:50%;transition:width .5s}.b0{top:0;background:var(--mu);opacity:.5}.b1{top:50%;background:linear-gradient(90deg,var(--tl),var(--cy))}
+.pill{display:inline-block;font-size:12px;border:1px solid var(--ln);border-radius:999px;padding:1px 9px;color:var(--wa);vertical-align:middle}
+.pill.ok{color:var(--em)}
+.up{color:var(--bd)}.dn{color:var(--em)}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:7px 8px;border-bottom:1px solid var(--ln);text-align:right}th:first-child,td:first-child{text-align:left}
+.w{overflow-x:auto}.empty{color:var(--mu);padding:10px 0}
+ul{margin:6px 0 0;padding-left:18px}li{margin:4px 0}
+.st{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.st li{display:grid;grid-template-columns:34px 1fr;gap:10px;margin:0}
+.st b{width:34px;height:34px;border-radius:50%;background:var(--pn2);display:grid;place-items:center;color:var(--cy);font-family:var(--hf)}
+footer{max-width:1180px;margin:auto;padding:20px 16px 40px;border-top:1px solid var(--ln);color:var(--mu);font-size:13px}
+.kv{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--ln);padding:6px 0}
+@media print{nav,footer,.btns,.noprint{display:none!important}body{background:#fff;color:#000}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+#amap{height:360px;border-radius:12px;margin:12px 0}.gr{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:8px 0 16px}.k{background:var(--pn2);border-radius:10px;padding:10px}.k b{display:block;font:700 20px var(--hf)}@media print{#amap{display:none}}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css"><script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script></head>
+<body>
+<nav><div class="nv">
+<a class="logo" href="#home">ECHO<b> EARTH</b></a>
+<a class="t" href="#home">Home</a><a class="t" href="#simulator">Simulator</a><a class="t" href="#compare">Compare &amp; reports</a><a class="t" href="#insights">Area reports</a><a class="t" href="#about">About</a>
+<button id="theme" aria-label="Switch light or dark theme">Theme</button></div></nav>
+
+<main>
+<section class="pg" id="p-home">
+<div class="hero g">
+ <div><h1>See the Future Before You Create It.</h1>
+ <p class="lead">Change traffic, trees, rainfall and paving on a campus or neighbourhood, then compare each what-if against a baseline. Every number is labelled as observed, modelled or illustrative.</p>
+ <div class="btns"><a class="btn p" href="#simulator">Start simulation</a><a class="btn" href="#insights">Explore live conditions</a></div></div>
+ <svg viewBox="0 0 560 330" role="img" aria-label="Illustration: a congested, polluted city on the left and a greener city on the right">
+  <defs><linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4540"/><stop offset="1" stop-color="#8a7a66"/></linearGradient><linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b3b5c"/><stop offset="1" stop-color="#5fd1c4"/></linearGradient><clipPath id="L"><rect width="280" height="330"/></clipPath><clipPath id="R"><rect x="280" width="280" height="330"/></clipPath></defs>
+  <g clip-path="url(#L)"><rect width="280" height="330" fill="url(#sk1)"/><circle cx="60" cy="70" r="40" fill="#6b6257" opacity=".6"/><circle cx="120" cy="50" r="52" fill="#5e564d" opacity=".6"/>
+   <g fill="#2a2d33"><rect x="10" y="130" width="50" height="170"/><rect x="66" y="90" width="44" height="210"/><rect x="116" y="150" width="60" height="150"/><rect x="182" y="110" width="46" height="190"/><rect x="232" y="160" width="48" height="140"/></g>
+   <g fill="#c9b27a" opacity=".7"><rect x="18" y="150" width="8" height="8"/><rect x="38" y="190" width="8" height="8"/><rect x="76" y="120" width="8" height="8"/><rect x="92" y="170" width="8" height="8"/><rect x="130" y="180" width="8" height="8"/><rect x="194" y="140" width="8" height="8"/></g>
+   <rect y="300" width="280" height="30" fill="#1b1d22"/><g fill="#e0584d"><rect x="14" y="306" width="34" height="14" rx="4"/><rect x="62" y="306" width="34" height="14" rx="4"/><rect x="110" y="306" width="34" height="14" rx="4"/><rect x="158" y="306" width="34" height="14" rx="4"/><rect x="206" y="306" width="34" height="14" rx="4"/></g>
+   <path d="M120 170c-6-20 14-24 8-44" stroke="#777" stroke-width="6" fill="none" opacity=".5"/></g>
+  <g clip-path="url(#R)"><rect x="280" width="280" height="330" fill="url(#sk2)"/><circle cx="500" cy="60" r="28" fill="#fde68a"/>
+   <g fill="#1e5a6e"><rect x="292" y="140" width="44" height="160"/><rect x="342" y="110" width="40" height="190"/><rect x="390" y="150" width="54" height="150"/></g>
+   <g fill="#34d399"><rect x="292" y="132" width="44" height="10" rx="4"/><rect x="342" y="102" width="40" height="10" rx="4"/><rect x="390" y="142" width="54" height="10" rx="4"/></g>
+   <rect x="280" y="300" width="280" height="30" fill="#23413a"/><g fill="#14b8a6"><rect x="300" y="306" width="30" height="14" rx="6"/><rect x="470" y="306" width="30" height="14" rx="6"/></g>
+   <g><rect x="452" y="230" width="8" height="70" fill="#7c5a3a"/><circle cx="456" cy="215" r="34" fill="#10b981"/><rect x="508" y="250" width="7" height="50" fill="#7c5a3a"/><circle cx="511" cy="238" r="26" fill="#34d399"/><rect x="354" y="270" width="6" height="30" fill="#7c5a3a"/><circle cx="357" cy="262" r="18" fill="#10b981"/></g></g>
+  <line x1="280" y1="0" x2="280" y2="330" stroke="#2dd4ee" stroke-width="2"/>
+  <text x="14" y="22" fill="#e8f1fb" font-size="13" font-family="sans-serif">Baseline: paved and congested</text><text x="294" y="22" fill="#e8f1fb" font-size="13" font-family="sans-serif">Scenario: shaded and permeable</text></svg>
+</div>
+<h2>What you can explore</h2>
+<div class="g g3">
+ <div class="c"><h3>Air quality</h3><p class="sm">A relative traffic-pollution index, shown apart from any live readings.</p></div>
+ <div class="c"><h3>Urban heat</h3><p class="sm">Surface and canopy effects as a relative heat indicator, not a temperature.</p></div>
+ <div class="c"><h3>Flood risk</h3><p class="sm">Runoff against drainage capacity, labelled illustrative.</p></div>
+ <div class="c"><h3>Green cover</h3><p class="sm">Effective canopy that grows over your chosen time horizon.</p></div>
+</div>
+<h2>How it works</h2>
+<ol class="st c"><li><b>1</b><span>Set a baseline: today's traffic, trees, paving, rain and drainage.</span></li><li><b>2</b><span>Change one or more inputs or add interventions, then run the simulation.</span></li><li><b>3</b><span>Read the indicators, uncertainty ranges and plain-language explanation.</span></li><li><b>4</b><span>Save scenarios, compare them, and export a report with its assumptions.</span></li></ol>
+<div class="c" style="margin-top:16px"><h3>Environmental responsibility</h3><p class="sm" style="margin:0">ECHO EARTH supports early thinking, not engineering sign-off. Indicators are relative and illustrative until calibrated with local data and reviewed by qualified people.</p></div>
+</section>
+
+<section class="pg" id="p-simulator">
+<h1 style="font-size:32px">Simulator</h1>
+<p class="sm">Location: <b id="locname">Salem, Tamil Nadu (demo area)</b> · Change it on the Area reports tab.</p>
+<div class="g g2">
+ <div class="c"><h3>Controls</h3><div id="controls"></div>
+  <p class="sm" style="margin:12px 0 2px">Interventions</p>
+  <label class="chk"><input type="checkbox" id="greenroof"> Green roofs</label><label class="chk"><input type="checkbox" id="permeable"> Permeable paving</label><label class="chk"><input type="checkbox" id="ev"> 30% electric vehicles</label>
+  <label for="sname">Scenario name</label><input id="sname" type="text" value="My scenario" maxlength="60" style="width:100%">
+  <div class="btns"><button class="p" id="run">Run simulation</button><button id="reset">Reset</button><button id="save">Save scenario</button></div><p class="sm" id="msg" role="status"></p></div>
+ <div class="c"><h3>Schematic area view <span class="pill">Illustrative</span></h3>
+  <svg id="map" viewBox="0 0 480 300" role="img" aria-label="Schematic of land cover for the current inputs"></svg>
+  <p class="sm">Grey = paved, green = effective canopy, dark = open ground, blue = flood susceptibility. A schematic, not a map or satellite image.</p>
+  <h3 style="margin-top:14px">What this means</h3><div id="explain" class="sm" style="font-size:14px"><p class="empty">Run a simulation to get a rule-based explanation.</p></div></div>
+ <div class="c"><h3>Results <span class="pill">Model-derived</span></h3><div id="results"><p class="empty">Choose Run simulation to see results against the baseline.</p></div><div id="uncert" class="sm"></div></div>
+</div></section>
+
+<section class="pg" id="p-compare"><h1 style="font-size:32px">Compare &amp; reports</h1>
+<div class="c" style="margin-top:14px"><div class="w" id="compare"></div>
+<div class="btns noprint"><button id="csv">Export CSV</button><button id="print">Print latest report</button><button id="clear">Delete all</button></div></div>
+<h2>Saved reports</h2><div class="c" id="reports"></div></section>
+
+<section class="pg" id="p-insights"><h1 style="font-size:32px">Area reports</h1><p class="sm">Search for a place or click anywhere on the map to get a report for that area.</p>
+<div class="c" style="margin-top:14px"><div class="row"><input id="q" type="text" placeholder="Search an area, e.g. Ayothiyapattinam, Salem" style="flex:1" aria-label="Search area"><button id="go">Search</button></div><div id="hits" class="btns"></div><div id="amap" role="region" aria-label="Interactive map. Click to choose an area."></div><div id="area"></div></div>
+<div class="g g4" style="margin-top:16px">
+ <div class="c"><h3>Air quality</h3><p class="sm">Traffic, street layout and weather drive local pollution. Trees can trap some particles but also block airflow in narrow streets.</p></div>
+ <div class="c"><h3>Urban heat</h3><p class="sm">Dark paving stores heat; shade and evaporation cool. Real cooling depends on species, irrigation and local climate.</p></div>
+ <div class="c"><h3>Rainfall and flooding</h3><p class="sm">Impervious ground sends more rain to drains at once. Terrain and drain condition matter and aren't modelled here.</p></div>
+ <div class="c"><h3>Vegetation</h3><p class="sm">Canopy takes years to mature, so the model scales tree benefit with the time horizon.</p></div></div></section>
+
+<section class="pg" id="p-about"><h1 style="font-size:32px">About &amp; methodology</h1>
+<div class="c" style="margin-top:14px"><h3>Model <span id="mv"></span></h3><ul class="sm" style="font-size:14px">
+<li>Effective tree cover = tree % × (0.6 + 0.4 × min(years/10, 1)), capped at 100 − impervious %.</li>
+<li>Air indicator = 100 × clamp(0.85 × traffic × (1 − 0.3 × trees) + 0.15 × impervious), where traffic = vehicles ÷ 60,000.</li>
+<li>Heat indicator = 100 × (0.5 × impervious + 0.25 × traffic + 0.25 × (1 − trees)).</li>
+<li>Runoff (mm/h) = rain × (0.1 + 0.8 × impervious) × (1 − 0.3 × trees). Flood susceptibility = 100 × r/(1+r), r = runoff ÷ drainage.</li>
+<li>Interventions: green roofs −6% heat and +5 pts green; permeable paving −20% runoff; electric shift −30% traffic. These factors are illustrative, not sourced.</li>
+<li>Uncertainty bands (air ±30%, heat ±20%, flood ±35%) are fixed illustrative ranges, not statistical intervals.</li></ul></div>
+<div class="g g4" style="margin-top:16px">
+<div class="c"><h3>Estimates vs observations</h3><p class="sm">Scenario results are estimates from your inputs. Live conditions come from external models. Neither is a field measurement.</p></div>
+<div class="c"><h3>Not built yet</h3><p class="sm">Sign-in and saved accounts (Supabase), a MapLibre map, and Gemini explanations need a server to keep keys and data safe. They belong in the Next.js version.</p></div></div></section>
+</main>
+<footer>ECHO EARTH is a demonstration project. Data: Open-Meteo (weather, air quality, elevation, history; CC BY 4.0, non-commercial free tier); © OpenStreetMap contributors (map tiles and Nominatim search, light use only); MapLibre GL JS. Scenario values are illustrative.</footer>
+
+<script>
+const MODEL="echo-sim-0.2.0",$=id=>document.getElementById(id);$("mv").textContent=MODEL;
+const F=[{k:"vehicles",l:"Vehicles per day",u:"vehicles/day",min:0,max:60000,s:500},{k:"tree",l:"Tree cover",u:"%",min:0,max:100,s:1},{k:"rain",l:"Rainfall intensity",u:"mm/h",min:0,max:150,s:1},{k:"drain",l:"Drainage capacity",u:"mm/h",min:1,max:150,s:1},{k:"imp",l:"Impervious surface",u:"%",min:0,max:100,s:1},{k:"horizon",l:"Time horizon",u:"years",min:1,max:30,s:1}];
+const BASE={vehicles:20000,tree:18,rain:30,drain:40,imp:55,horizon:5,greenroof:false,permeable:false,ev:false};
+let draft={...BASE},cur=null,saved=[],loc={name:"Salem, Tamil Nadu (demo area)",lat:11.6643,lon:78.146};
+try{saved=JSON.parse(localStorage.getItem("echo_saved")||"[]")}catch(e){}
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),f1=x=>x.toFixed(1),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function sim(raw){const i={...raw};F.forEach(f=>{let v=Number(i[f.k]);i[f.k]=cl(isFinite(v)?v:BASE[f.k],f.min,f.max)});
+ const tr=cl(i.vehicles/60000)*(i.ev?.7:1),et=Math.min(i.tree*(.6+.4*Math.min(i.horizon/10,1)),100-i.imp)/100,im=i.imp/100;
+ const air=100*cl(.85*tr*(1-.3*et)+.15*im);let heat=100*cl(.5*im+.25*tr+.25*(1-et));if(i.greenroof)heat*=.94;
+ let ro=i.rain*(.1+.8*im)*(1-.3*et);if(i.permeable)ro*=.8;const r=ro/i.drain;
+ return{inputs:i,model:MODEL,et,out:{air,heat,runoff:ro,flood:100*r/(1+r),green:cl(et*100+(i.greenroof?5:0),0,100)}}}
+const M=[{k:"air",l:"Air-quality indicator",u:"index 0–100",bad:1,b:.3},{k:"heat",l:"Urban-heat indicator",u:"index 0–100",bad:1,b:.2},{k:"runoff",l:"Peak runoff",u:"mm/h",bad:1,max:150},{k:"flood",l:"Flood susceptibility",u:"index 0–100",bad:1,b:.35},{k:"green",l:"Green cover",u:"%"}];
+const dl=(a,b)=>({d:b-a,p:a===0?null:100*(b-a)/a});
+function controls(){$("controls").innerHTML=F.map(f=>`<label for="f_${f.k}">${f.l} (${f.u})</label><div class="row"><input type="range" id="f_${f.k}" min="${f.min}" max="${f.max}" step="${f.s}" value="${draft[f.k]}"><input type="number" id="n_${f.k}" min="${f.min}" max="${f.max}" step="${f.s}" value="${draft[f.k]}" aria-label="${f.l}"></div>`).join("");
+ F.forEach(f=>{const r=$("f_"+f.k),n=$("n_"+f.k),set=v=>{draft[f.k]=cl(Number(v)||0,f.min,f.max);r.value=n.value=draft[f.k];drawMap(sim(draft))};r.oninput=()=>set(r.value);n.onchange=()=>set(n.value)});
+ ["greenroof","permeable","ev"].forEach(k=>{$(k).checked=draft[k];$(k).onchange=()=>draft[k]=$(k).checked})}
+function drawMap(s){const C=12,R=8,N=96,imp=Math.round(s.inputs.imp/100*N),tr=Math.min(Math.round(s.et*N),N-imp);let h='<rect width="480" height="300" fill="#0a1424"/>';
+ for(let n=0;n<N;n++){const o=(n*37)%N,x=(n%C)*40,y=Math.floor(n/C)*34;let c="#16263f";if(o<imp)c="#5c6678";else if(o<imp+tr)c="#22c55e";h+=`<rect x="${x+2}" y="${y+2}" width="36" height="30" rx="5" fill="${c}"/>`}
+ h+=`<rect x="0" y="278" width="480" height="22" fill="#1b2433"/>`;const dots=Math.round(s.inputs.vehicles/60000*(s.inputs.ev?.7:1)*18);for(let d=0;d<dots;d++)h+=`<rect x="${12+d*26}" y="285" width="18" height="8" rx="3" fill="#f87171"/>`;
+ if(cur){const fh=cur.out.flood/100*272;h+=`<rect x="0" y="${272-fh}" width="480" height="${fh}" fill="#2dd4ee" opacity=".28"/>`}
+ $("map").innerHTML=h}
+function say(t){$("msg").textContent=t}
+function explain(s){const b=sim(BASE),t=[];const a=dl(b.out.air,s.out.air),he=dl(b.out.heat,s.out.heat),fl=dl(b.out.flood,s.out.flood),gr=dl(b.out.green,s.out.green);
+ const w=(d,n,x,y)=>Math.abs(d)<.5?`${n} is about the same as the baseline.`:`${n} is ${d>0?x:y} than the baseline by ${f1(Math.abs(d))} points.`;
+ t.push(w(a.d,"The traffic-pollution index","higher","lower"),w(he.d,"The heat indicator","higher","lower"),w(fl.d,"Flood susceptibility","higher","lower"));
+ t.push(gr.d>.5?`Effective green cover rises by ${f1(gr.d)} points.`:gr.d<-.5?`Effective green cover falls by ${f1(-gr.d)} points.`:"Green cover is unchanged.");
+ const tips=[];if(s.out.flood>60)tips.push("raise drainage capacity or add permeable paving and bioswales");if(s.out.heat>60)tips.push("add shade trees and cool or green roofs");if(s.out.air>50)tips.push("reduce through-traffic or shift trips to electric or transit");
+ $("explain").innerHTML=`<p>${t.join(" ")}</p>`+(tips.length?`<p><b>Worth testing:</b> ${tips.join("; ")}.</p>`:"")+`<p class="sm">Rule-based text from the numbers, not an AI model and not a forecast.</p>`}
+function results(){if(!cur)return;const b=sim(BASE);$("results").innerHTML=M.map(m=>{const a=b.out[m.k],v=cur.out[m.k],{d,p}=dl(a,v),mx=m.max||100,w=m.bad?d>0:d<0,c=Math.abs(d)<.05?"":w?"up":"dn";
+ return`<div class="m"><div class="mh"><span>${m.l}</span><b>${f1(v)} <span class="sm">${m.u}</span></b></div><div class="bar" role="img" aria-label="${m.l} baseline ${f1(a)} scenario ${f1(v)}"><i class="b0" style="width:${cl(a/mx)*100}%"></i><i class="b1" style="width:${cl(v/mx)*100}%"></i></div><div class="sm">Baseline ${f1(a)} · <span class="${c}">${d>=0?"+":""}${f1(d)}${p===null?" (% n/a, baseline 0)":" ("+(p>=0?"+":"")+f1(p)+"%)"}</span></div></div>`}).join("");
+ $("uncert").innerHTML="<b>Illustrative ranges:</b> "+M.filter(m=>m.b).map(m=>`${m.l.split(" ")[0]} ${f1(cl(cur.out[m.k]*(1-m.b),0,100))}–${f1(cl(cur.out[m.k]*(1+m.b),0,100))}`).join(" · ");
+ explain(cur);drawMap(cur)}
+function persist(){try{localStorage.setItem("echo_saved",JSON.stringify(saved))}catch(e){}}
+function tables(){const b=sim(BASE),rows=[{name:"Baseline",out:b.out,model:MODEL},...saved];
+ $("compare").innerHTML=saved.length?"<table><thead><tr><th>Scenario</th>"+M.map(m=>`<th>${m.l.split(" ")[0]} ${m.l.split(" ")[1]}<br><span class="sm">${m.u}</span></th>`).join("")+"<th>Model</th></tr></thead><tbody>"+rows.map((s,x)=>`<tr><td>${esc(s.name)}</td>`+M.map(m=>{const{d,p}=dl(b.out[m.k],s.out[m.k]);return`<td>${f1(s.out[m.k])}${x?`<br><span class="sm">${d>=0?"+":""}${f1(d)}${p===null?"":" / "+f1(p)+"%"}</span>`:""}</td>`}).join("")+`<td>${s.model}</td></tr>`).join("")+"</tbody></table>"+(saved.some(s=>s.model!==MODEL)?'<p class="sm up">Some scenarios use another model version and are not directly comparable.</p>':""):'<p class="empty">No saved scenarios yet. Run and save one in the Simulator.</p>';
+ $("reports").innerHTML=saved.length?saved.map((s,x)=>`<div class="kv"><span>${esc(s.name)} <span class="sm">· ${s.created.slice(0,10)} · ${s.model}</span></span><button data-d="${x}" class="noprint">Delete</button></div>`).join(""):'<p class="empty">Saved scenarios appear here as reports.</p>';
+ document.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{saved.splice(+b.dataset.d,1);persist();tables()})}
+$("run").onclick=()=>{$("run").disabled=true;$("run").textContent="Running…";setTimeout(()=>{cur=sim(draft);results();$("run").disabled=false;$("run").textContent="Run simulation";say(draft.tree+draft.imp>100?"Tree cover capped so trees plus paving stay within 100% of the area.":"Simulation complete.")},350)};
+$("reset").onclick=()=>{draft={...BASE};cur=null;controls();drawMap(sim(draft));$("results").innerHTML='<p class="empty">Reset. Choose Run simulation to see results.</p>';$("uncert").textContent="";$("explain").innerHTML='<p class="empty">Run a simulation to get a rule-based explanation.</p>';say("Reset to baseline.")};
+$("save").onclick=()=>{if(!cur)return say("Run a simulation before saving it.");const n=$("sname").value.trim()||"Untitled scenario";saved.push({name:n,inputs:cur.inputs,out:cur.out,model:MODEL,location:loc.name,created:new Date().toISOString()});persist();tables();say(`Saved “${n}”.`)};
+$("clear").onclick=()=>{if(saved.length&&confirm("Delete all saved scenarios?")){saved=[];persist();tables()}};
+function dlf(n,t,y){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:y}));a.download=n;a.click()}
+$("csv").onclick=()=>{if(!saved.length)return;const q=v=>`"${String(v).replace(/"/g,'""')}"`,h=["name","model","created_utc","location",...F.map(f=>`${f.k} (${f.u})`),"greenroof","permeable","ev",...M.map(m=>`${m.k} (${m.u})`)];dlf("echo-earth-scenarios.csv",[h,...saved.map(s=>[s.name,s.model,s.created,s.location||"",...F.map(f=>s.inputs[f.k]),s.inputs.greenroof,s.inputs.permeable,s.inputs.ev,...M.map(m=>s.out[m.k].toFixed(2))])].map(r=>r.map(q).join(",")).join("\n"),"text/csv")};
+$("print").onclick=()=>{if(!saved.length)return;const s=saved[saved.length-1];$("reports").innerHTML=`<h3>${esc(s.name)}</h3><p class="sm">Model ${s.model} · ${s.created} · ${esc(s.location||"")}</p><div class="kv"><b>Inputs</b></div>`+F.map(f=>`<div class="kv"><span>${f.l}</span><span>${s.inputs[f.k]} ${f.u}</span></div>`).join("")+`<div class="kv"><b>Outputs (model-derived)</b></div>`+M.map(m=>`<div class="kv"><span>${m.l}</span><span>${f1(s.out[m.k])} ${m.u}</span></div>`).join("")+`<p class="sm">Provenance: modelled from user inputs; no observations or AI text used. Limitations: relative, illustrative indicators; not a forecast of PM2.5, temperature or flooding.</p>`;window.print();tables()};
+$("theme").onclick=()=>{const r=document.documentElement,n=r.dataset.theme==="light"?"dark":"light";r.dataset.theme=n;try{localStorage.setItem("echo_theme",n)}catch(e){}};
+try{document.documentElement.dataset.theme=localStorage.getItem("echo_theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}
+function route(){const id=(location.hash||"#home").slice(1),p=$("p-"+id)?id:"home";document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id==="p-"+p));document.querySelectorAll("nav a.t").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+p));if(p==="compare")tables();if(p==="insights")initMap();window.scrollTo(0,0)}
+addEventListener("hashchange",route);
+let map,mk,areaData=null;
+const OSM={version:8,sources:{o:{type:"raster",tiles:["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],tileSize:256,attribution:"© OpenStreetMap contributors"}},layers:[{id:"o",type:"raster",source:"o"}]};
+function initMap(){if(map){setTimeout(()=>map.resize(),50);return}
+ if(!window.maplibregl){$("amap").innerHTML='<p class="empty">Map could not load (offline?). Use the search box instead.</p>';return}
+ map=new maplibregl.Map({container:"amap",style:OSM,center:[loc.lon,loc.lat],zoom:11});map.addControl(new maplibregl.NavigationControl());
+ mk=new maplibregl.Marker().setLngLat([loc.lon,loc.lat]).addTo(map);
+ map.on("click",async e=>{const{lat,lng}=e.lngLat;pick(lat,lng,await rev(lat,lng))})}
+async function rev(lat,lon){const f=`${lat.toFixed(3)}, ${lon.toFixed(3)}`;try{const a=(await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=14&lat=${lat}&lon=${lon}`).then(r=>r.json())).address||{},n=a.village||a.suburb||a.hamlet||a.town||a.city||a.county,d=a.state_district||a.county||a.state;return n?(d&&d!==n?`${n}, ${d}`:n):f}catch(e){return f}}
+function pick(lat,lon,name){loc={name,lat,lon};if(map){mk.setLngLat([lon,lat]);map.flyTo({center:[lon,lat],zoom:Math.max(map.getZoom(),12)})}loadArea()}
+const iso=d=>d.toISOString().slice(0,10);
+async function loadArea(){
+ $("locname").textContent=loc.name;$("area").innerHTML=`<p class="empty">Loading report for ${esc(loc.name)}…</p>`;
+ const q=u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()}),L=`latitude=${loc.lat}&longitude=${loc.lon}`,e=new Date(Date.now()-3*864e5),st=new Date(e-29*864e5);
+ const R=await Promise.allSettled([q(`https://api.open-meteo.com/v1/forecast?${L}&current=temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m&daily=precipitation_sum&forecast_days=7&timezone=auto`),q(`https://air-quality-api.open-meteo.com/v1/air-quality?${L}&current=pm2_5,pm10,european_aqi`),q(`https://api.open-meteo.com/v1/elevation?${L}`),q(`https://archive-api.open-meteo.com/v1/archive?${L}&start_date=${iso(st)}&end_date=${iso(e)}&daily=precipitation_sum,temperature_2m_max&hourly=precipitation&timezone=auto`)]);
+ const [W,A,E,H]=R.map(x=>x.status==="fulfilled"?x.value:null);
+ let hmax=null,tot=null,wet=null,tmax=null;
+ if(H){const p=H.hourly.precipitation.filter(v=>v!=null),d=H.daily.precipitation_sum.filter(v=>v!=null),t=H.daily.temperature_2m_max.filter(v=>v!=null);if(p.length&&d.length&&t.length){hmax=Math.max(...p);tot=d.reduce((x,y)=>x+y,0);wet=d.filter(v=>v>=2.5).length;tmax=t.reduce((x,y)=>x+y,0)/t.length}}
+ const k=(l,v,u,n)=>`<div class="k"><span class="sm">${l}</span><b>${v==null?"n/a":v} <span class="sm">${v==null?"":u}</span></b><span class="sm">${n||""}</span></div>`,fx=(v,n=1)=>v==null?null:(+v).toFixed(n);
+ let h=`<h2 style="margin-top:8px">Environmental report: ${esc(loc.name)}</h2><p class="sm">Lat ${loc.lat.toFixed(4)}, lon ${loc.lon.toFixed(4)} · generated ${new Date().toLocaleString()}</p>`;
+ const c=W&&W.current,u=W&&W.current_units;
+ h+=`<h3>Right now <span class="pill">Forecast model</span></h3><div class="gr">`+(c?k("Temperature",c.temperature_2m,u.temperature_2m,c.time)+k("Humidity",c.relative_humidity_2m,u.relative_humidity_2m)+k("Precipitation",c.precipitation,u.precipitation)+k("Wind",c.wind_speed_10m,u.wind_speed_10m):"<p class='empty'>Weather unavailable.</p>")+"</div>";
+ const ac=A&&A.current,au=A&&A.current_units;
+ h+=`<h3>Air quality <span class="pill">Modelled, not a station reading</span></h3><div class="gr">`+(ac?k("PM2.5",ac.pm2_5,au.pm2_5,ac.time)+k("PM10",ac.pm10,au.pm10)+k("European AQI",ac.european_aqi,""):"<p class='empty'>Air-quality data unavailable.</p>")+"</div>";
+ h+=`<h3>Terrain and rainfall history <span class="pill">Open-Meteo, model-based</span></h3><div class="gr">`+k("Elevation",E&&E.elevation?fx(E.elevation[0],0):null,"m","Coarse terrain model")+k("Rain, last 30 days",fx(tot),"mm","reanalysis")+k("Rainy days (≥2.5 mm)",wet,"days")+k("Peak hourly rain",fx(hmax),"mm/h","past 30 days")+k("Avg daily max temp",fx(tmax),"°C")+"</div>";
+ if(W&&W.daily){const d=W.daily.precipitation_sum,m=Math.max(...d),i=d.indexOf(m);h+=`<h3>Next 7 days <span class="pill">Forecast</span></h3><div class="gr">`+k("Forecast rain",fx(d.reduce((x,y)=>x+y,0)),"mm")+k("Wettest day",fx(m),"mm",W.daily.time[i])+"</div>"}
+ const b={...BASE};if(hmax!=null)b.rain=cl(Math.round(hmax),0,150);const sb=sim(b).out;areaData={rain:b.rain,has:hmax!=null};
+ h+=`<h3>Baseline indicators for this area <span class="pill">Illustrative</span></h3><div class="gr">`+k("Air indicator",f1(sb.air),"/100")+k("Heat indicator",f1(sb.heat),"/100")+k("Flood susceptibility",f1(sb.flood),"/100")+k("Green cover",f1(sb.green),"%")+`</div><p class="sm">${hmax!=null?`Rainfall uses this area's peak hourly rain (${b.rain} mm/h).`:"Rainfall history unavailable, so the default rainfall is used."} Traffic, trees, paving and drainage are demo defaults, not measured for this area. Replace them in the Simulator.</p>`;
+ const mine=saved.filter(x=>x.location===loc.name);
+ h+=`<h3>Saved scenarios for this area</h3>`+(mine.length?mine.map(x=>`<div class="kv"><span>${esc(x.name)}</span><span class="sm">air ${f1(x.out.air)} · heat ${f1(x.out.heat)} · flood ${f1(x.out.flood)}</span></div>`).join(""):'<p class="empty">None yet. Run and save a scenario in the Simulator while this area is selected.</p>');
+ h+=`<p class="sm">Provenance: weather, air quality, elevation and history from Open-Meteo models; area name from OpenStreetMap Nominatim; indicators from ${MODEL} using the stated inputs. No ground sensors were used. Not a forecast or engineering assessment.</p><div class="btns noprint"><button class="p" id="aprint">Print report</button><button id="aapply">Use this area's rainfall in simulator</button><a class="btn" href="#simulator">Open simulator</a></div>`;
+ $("area").innerHTML=h;$("aprint").onclick=()=>window.print();
+ $("aapply").onclick=()=>{if(!areaData.has)return alert("No rainfall history for this area.");draft.rain=areaData.rain;controls();location.hash="#simulator"}}
+async function search(){const n=$("q").value.trim();if(!n)return;$("hits").innerHTML='<span class="sm">Searching…</span>';let x=[];
+ try{x=(await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=5&q=${encodeURIComponent(n)}`).then(r=>r.json())).map(p=>({name:p.display_name.split(",").slice(0,3).join(",").trim(),lat:+p.lat,lon:+p.lon}))}catch(e){}
+ if(!x.length)try{x=((await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(n)}&count=5`).then(r=>r.json())).results||[]).map(p=>({name:`${p.name}${p.admin1?", "+p.admin1:""}`,lat:p.latitude,lon:p.longitude}))}catch(e){}
+ $("hits").innerHTML=x.length?x.map((p,i)=>`<button data-i="${i}">${esc(p.name)}</button>`).join(""):'<span class="sm">No matches. Try another spelling or click the map.</span>';
+ $("hits").querySelectorAll("button").forEach(b=>b.onclick=()=>{const p=x[+b.dataset.i];$("hits").innerHTML="";pick(p.lat,p.lon,p.name)})}
+$("go").onclick=search;$("q").onkeydown=e=>{if(e.key==="Enter")search()};
+controls();drawMap(sim(draft));route();loadArea();
+</script>
+</body>
+</html>
